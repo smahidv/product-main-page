@@ -1,0 +1,90 @@
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Large image inside slideshow */
+.slideshow img {
+    width: 100%;
+    height: auto;
+    
+}
+
+/* Previous and Next buttons (only on small screens) */
+.slideshow .prev, .slideshow .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding:10px 15px;
+    font-size: 17px;
+    background-color: var(--White);
+    border: none;
+    outline: none;
+    z-index: 1; /* Ensure icons appear above the image */
+    transition: opacity 0.2s;
+    border-radius: 50%;
+}
+
+
+.slideshow .prev {
+    left:3%;
+}
+
+.slideshow .next {
+    right: 3%;
+}
+
+/* Media query for small devices (max-width: 60em) */
+@media (max-width: 60em) {
+    /* Show Previous and Next buttons on small screens */
+    .slideshow .prev, .slideshow .next {
+        display: block;
+    }
+}
+
+/* Thumbnails (only on large screens) */
+.thumbnails {
+    text-align: center;
+    margin-top: 10px;
+    display: none; /* Hide by default */
+}
+
+/* Thumbnail images (only on large screens) */
+.thumbnail {
+    width: 80px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    
+}
+
+.thumbnail.active {
+    opacity: 1;
+}
+
+/* Media query for large devices (min-width: 60em) */
+@media (min-width: 60em) {
+    .slideshow-container{
+margin-bottom: 3em;
+    }
+    .thumbnails {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Adjust the styling of thumbnails for large screens if needed */
+    .thumbnail {
+        width: 100px;
+        height: auto;
+        margin: 0 10px;
+        
+    }
+    .slideshow img{
+        border-radius: .5rem;
+    }
+}

@@ -1,0 +1,98 @@
+/* LightBox container */
+.lightbox-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 9999;
+}
+.lightbox-subContainer{
+position: relative;
+}
+
+/* LightBox content */
+.lightbox {
+    overflow: hidden;
+    display: flex; /* Ensure the lightbox content is displayed as a flex container */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center;
+}
+
+.lightbox img {
+    max-width: 100%;
+    min-height: auto;
+    display: block;
+    margin: 0 auto;
+   width: clamp(200px,350px,300px);
+   border-radius: .5rem;
+}
+
+
+/* Thumbnails */
+.lightbox-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   max-width: 300px;
+   min-width: 300px;
+   gap:1em;
+   position: relative;
+   
+}
+
+.lightbox-thumbnail {
+    max-width: 100px;
+    min-height: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: .5rem;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.lightbox-thumbnail.active {
+    border: 2px solid var(--Orange);
+}
+
+
+.close-button{
+    position: absolute;
+    top:-20px;
+    right:0%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 11; /* Ensure icons appear above the image */
+}
+
+/* LightBox Prev and Next buttons */
+.lightbox .prev, .lightbox .next  {
+    position: absolute;
+    top: 39%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding:10px 15px;
+    font-size: 17px;
+    background-color: var(--White);
+    border: none;
+    outline: none;
+    z-index: 1; /* Ensure icons appear above the image */
+    transition: opacity 0.2s;
+    border-radius: 50%;
+}
+
+.lightbox .prev {
+    left: -25px;
+}
+
+.lightbox .next {
+    right: -25px;
+}
