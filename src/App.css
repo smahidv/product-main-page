@@ -83,6 +83,8 @@
 @media(min-width:60em){
   .App{
     margin: 2em 4em;
+
+    
   }
   .grid-2{
     display: grid;
