@@ -45,6 +45,7 @@ const Description = () => {
                 </div>
                 <del>$250.00</del>
             </div>
+            <div className="flex-desktopversion">
             <div className="count-bar flex">
                 <div className="operator" onClick={decrement}>
                     <HiMinus />
@@ -60,6 +61,7 @@ const Description = () => {
                 />
                 <p>Add to cart</p>
             </button>
+            </div>
         </div>
     );
 }

@@ -86,4 +86,8 @@ button.flex p ,.cardShooping_content button p {
     .mainContent-description{
         align-self: center;
     }
+    .mainContent-description .flex-desktopversion{
+        display: flex;
+        gap:1em;
+    }
 }
