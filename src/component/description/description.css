@@ -77,6 +77,7 @@ button.flex p ,.cardShooping_content button p {
 }
 .count-bar,button{
     border-radius: .3rem;
+    
 }
 @media (min-width: 60em) {
     .mainContent-description .price{
@@ -85,10 +86,12 @@ button.flex p ,.cardShooping_content button p {
     }
     .mainContent-description{
         align-self: center;
+
     }
     .mainContent-description .flex-desktopversion{
         display: flex;
         gap:1em;
+
 <<<<<<< HEAD
 =======
         
