@@ -46,6 +46,10 @@ const Description = () => {
                 <del>$250.00</del>
             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            
+>>>>>>> c301a1c (commit flex)
 =======
             
 >>>>>>> c301a1c (commit flex)
