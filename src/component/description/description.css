@@ -1,0 +1,94 @@
+.mainContent-description{
+    margin: 1em 1.5em;
+    margin-bottom: 5em !important;
+}
+h1{
+    font-size: clamp(10px,12px,20px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:var(--Orange);
+    padding-block: 1em .5em;
+    margin: 0;
+    
+}
+h1,h2,p,del,.price-flex-2 > *{
+    font-family: var(--ff);
+}
+.mainContent-description p{
+    color:var(--Dark-grayish-blue);
+}
+.mainContent-description > *:not(:first-child){
+    margin-bottom: 1em;
+}
+.price{
+    justify-content: space-between;
+    align-items: center;
+}
+del{
+    color:var(--Grayish-blue);
+    user-select: none;
+}
+.price > * ,.count-bar > *{
+    font-weight: var(--fw-bold);
+}
+.price-flex-2{
+    gap:2em;
+    align-items: center;
+}
+.price-flex-2 .descount{
+    background-color: var(--Pale-orange);
+    border-radius: .5rem;
+    color: var(--Orange);
+    padding:.1em .9em;
+}
+.price-flex-2 .currentPrice{
+    font-size: 2em;
+    
+}
+.count-bar{
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--Light-grayish-blue);
+    padding: .5em;
+}
+.count-bar .operator{
+    color:var(--Orange);
+    cursor: pointer;
+    
+}
+.count-bar_current-number{
+    user-select: none;
+}
+button.flex,.cardShooping_content button{
+    width: 100%;
+    justify-content: center;
+    gap: 1em;
+    border: none;
+    background-color: var(--Orange);
+    align-items: center;
+    padding: .5em;
+    box-shadow:0 20px 30px 5px var(--Pale-orange) ;
+    outline: none;
+    cursor: pointer;
+}
+button.flex p ,.cardShooping_content button p {
+    color: var(--White);
+    user-select: none;
+}
+.count-bar,button{
+    border-radius: .3rem;
+}
+@media (min-width: 60em) {
+    .mainContent-description .price{
+        display:block;
+
+    }
+    .mainContent-description{
+        align-self: center;
+    }
+    .mainContent-description .flex-desktopversion{
+        display: flex;
+        gap:1em;
+        
+    }
+}
