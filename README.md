@@ -2,3 +2,5 @@
 #slideshow of different aspect of the product
 #lightbox it focuss on the product
 #interactive cart that contain the items added to cart
+
+visualise web site ----> https://smahidv.github.io/product-main-page/
