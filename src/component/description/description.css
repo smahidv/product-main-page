@@ -89,6 +89,10 @@ button.flex p ,.cardShooping_content button p {
     .mainContent-description .flex-desktopversion{
         display: flex;
         gap:1em;
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> c301a1c (commit flex)
     }
 }

@@ -45,7 +45,11 @@ const Description = () => {
                 </div>
                 <del>$250.00</del>
             </div>
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> c301a1c (commit flex)
             <div className="flex-desktopversion">
             <div className="count-bar flex">
                 <div className="operator" onClick={decrement}>
